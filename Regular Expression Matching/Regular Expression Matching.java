@@ -1,6 +1,6 @@
 class Solution {
-	public boolean isMatch(String text, String pattern) {
-		if (pattern.isEmpty()) {
+    public boolean isMatch(String text, String pattern) {
+        if (pattern.isEmpty()) {
 			return text.isEmpty();
 		}
 		boolean first_match = (!text.isEmpty() && 
