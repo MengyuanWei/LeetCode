@@ -19,7 +19,6 @@ class Solution {
                 } else {
                     end = mid;
                 }
-                
             }
         }
         if (nums[start] == target)
