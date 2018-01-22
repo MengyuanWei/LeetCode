@@ -26,6 +26,5 @@ class Solution {
         Solution s = new Solution();
         int[] test = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
         System.out.println(s.trap(test));
-        
     }
 }
