@@ -3,7 +3,6 @@ class ListNode {
     ListNode next;
     ListNode(int x) { val = x; }
 }
-
 class Solution {
     public ListNode rotateRight(ListNode head, int n) {
         if (head == null || head.next == null) return head;
