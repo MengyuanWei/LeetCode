@@ -25,4 +25,5 @@ class Solution {
             result.add(intervals.get(i++));
         return result;
     }
+    
 }
