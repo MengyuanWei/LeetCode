@@ -1,4 +1,3 @@
-import java.util.*;
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
