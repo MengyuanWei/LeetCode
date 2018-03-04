@@ -1,19 +1,17 @@
 class Solution {
     public int uniquePaths(int m, int n) {
-        int step = m + n - 2; // total steps that need to go
-        int down = m - 1; // number of steps that need to go down
-        double ans = 1;
-        for (int i = 1; i <= down; i++) {
-            // here calculate the total possible path number
-            // Combination(step, down) = n! / (k!(n - down)!)
-            // reduce the numerator and denominator and get
-            ans = ans * (step - down + i) / i;
+        int[][] dp = new int[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                dp[0][j] = 1;
+                dp[i][0] = 1;
+            }
         }
-        return (int)ans;
-        
-    }
-    public static void main(String[] args) {
-        Solution s = new Solution();
-        System.out.println(s.uniquePaths(3, 7));
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+            }
+        }
+        return dp[m - 1][n - 1];
     }
 }
