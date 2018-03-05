@@ -7,6 +7,7 @@ class TreeNode {
         val = x;
     }
 }
+
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> list = new ArrayList<>();
