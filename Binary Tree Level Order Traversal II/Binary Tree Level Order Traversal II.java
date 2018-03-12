@@ -18,7 +18,6 @@ class Solution {
         if (root == null) return;
         if (height >= list.size()) {
             list.add(new ArrayList<>());
-            
         }
         list.get(height).add(root.val);
         helper(list, root.left, height + 1);
