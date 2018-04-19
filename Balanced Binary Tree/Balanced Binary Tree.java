@@ -17,5 +17,6 @@ class Solution {
         int left = depth(root.left);
         int right = depth(root.right);
         return Math.abs(left - right) <= 1 && isBalanced(root.left) && isBalanced(root.right);
+        
     }
 }
