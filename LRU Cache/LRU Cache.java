@@ -34,7 +34,7 @@ class LRUCache {
     }
     
     public void put(int key, int value) {
-        if (capacity ==0) return;
+        if (capacity == 0) return;
         if (map.containsKey(key)) {
             map.get(key).val = value;
             moveToFront(map.get(key));
@@ -74,7 +74,7 @@ class LRUCache {
     }
     
     public static void main(String[] args) {
-        LRUCache cache = new LRUCache(3);
+        LRUCache cache = new LRUCache(2);
         cache.put(1, 1);
         cache.put(2, 2);
         System.out.println(cache.get(1));
