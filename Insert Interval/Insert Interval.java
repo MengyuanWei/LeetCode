@@ -20,6 +20,7 @@ class Solution {
             );
             i++;
         }
+        
         result.add(newInterval);
         while (i < intervals.size())
             result.add(intervals.get(i++));
