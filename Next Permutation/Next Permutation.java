@@ -28,12 +28,4 @@ class Solution {
         nums[i] = nums[j];
         nums[j] = temp;
     }
-    public static void main(String[] args) {
-        Solution s = new Solution();
-        int[] test = {4, 2, 3, 1, 9};
-        s.nextPermutation(test);
-        for (int i = 0; i < 5; i++) {
-            System.out.print(test[i] + " ");
-        }
-    }
 }
