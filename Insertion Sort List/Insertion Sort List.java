@@ -6,6 +6,7 @@
  *     ListNode(int x) { val = x; }
  * }
  */
+
 class Solution {
 	public ListNode insertionSortList(ListNode head) {
 		if (head == null) return null;
