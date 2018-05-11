@@ -8,6 +8,7 @@ class Solution {
         }
         return lastPos == 0;
     }
+    
     public static void main(String[] args) {
         int[] a = {2, 3, 1, 1, 4};
         int[] b = {3, 2, 1, 0, 4};
