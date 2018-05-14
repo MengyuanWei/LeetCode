@@ -19,7 +19,6 @@ class Solution {
                 b = b.next;
             }
             head = head.next;
-            
         }
         s.next = biggerHead.next; 
         b.next = null;
