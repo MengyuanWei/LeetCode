@@ -19,7 +19,6 @@ class Solution {
 			start.next = pre.next;
 			pre.next = start;
 			start = then;
-			
 		}
 		return dHead.next;
 	}
